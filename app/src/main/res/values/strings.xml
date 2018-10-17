@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Contatinhos</string>
+    <string name="nome">Nome</string>
+    <string name="telefone">Telefone</string>
+    <string name="email">Email</string>
+    <string name="endereco">Endereço</string>
+    <string name="salvar">Salvar</string>
+    <string name="enviar_mensagem">Enviar Mensagem</string>
+    <string name="telefonar">Telefonar</string>
+    <string name="title_activity_contatinho">Contatinho</string>
+    <string name="title_activity_contatinho_adapter">ContatinhoAdapter</string>
+    <string name="title_activity_lista_contatinhos">ListaContatinhosActivity</string>
+    <string name="title_activity_cadastro_contatinho">CadastroContatinhoActivity</string>
+</resources>

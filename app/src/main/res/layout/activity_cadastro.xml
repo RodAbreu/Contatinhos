@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <requestFocus/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".CadastroActivity"
+        android:paddingBottom="16dp"
+        android:columnCount="2">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            android:layout_columnSpan="2">
+
+            <ImageView
+                android:id="@+id/imgFoto"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:background="@color/gray"
+                android:src="@drawable/ic_person"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/btnFoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="6dp"
+                app:fabSize="normal"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                tools:ignore="RtlHardcoded"
+                android:src="@drawable/ic_camera_alt"/>
+        </FrameLayout>
+
+        <ImageView
+            style="@style/FormImageView"
+            android:contentDescription="@string/nome"
+            android:src="@drawable/ic_person_box"/>
+
+        <EditText
+            android:id="@+id/edtNome"
+            style="@style/FormEditText"
+            android:inputType="textPersonName|textCapWords"
+            android:hint="@string/nome"/>
+
+        <ImageView
+            android:id="@+id/imgTelefone"
+            style="@style/FormImageView"
+            android:contentDescription="@string/telefone"
+            android:src="@drawable/ic_perm_phone_msg"/>
+
+        <EditText
+            android:id="@+id/edtTelefone"
+            style="@style/FormEditText"
+            android:hint="@string/telefone"
+            android:inputType="phone" />
+
+        <ImageView
+            android:id="@+id/imgEmail"
+            style="@style/FormImageView"
+            android:contentDescription="@string/email"
+            android:src="@drawable/ic_email"/>
+
+        <EditText
+            android:id="@+id/edtEmail"
+            style="@style/FormEditText"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+
+        <ImageView
+            android:id="@+id/imgEndereco"
+            style="@style/FormImageView"
+            android:contentDescription="@string/endereco"
+            android:src="@drawable/ic_map"/>
+
+        <EditText
+            android:id="@+id/edtEndereco"
+            style="@style/FormEditText"
+            android:hint="@string/endereco"
+            android:imeOptions="actionDone"
+            android:inputType="textCapWords|textPostalAddress" />
+    </GridLayout>
+</ScrollView>
